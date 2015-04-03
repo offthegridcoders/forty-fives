@@ -1,5 +1,5 @@
 #deck {
-  float: left;
+  display: block;
   width: 120px;
   vertical-align: top;
 }
@@ -17,23 +17,36 @@
 
 #p1Hand li,
 #p2Hand li {
-  height: 50px;
-  width: 50px;
-  background-size: 50%;
-  background-repeat: no-repeat;
-  background-position: center;
+    height: 100px;
+  width: 75px;
   display: inline-block;
+  border: solid 1px rgba(0, 0, 0, 0.38);
+  border-radius: 5px;
+  margin-right: 10px;
+  padding: 5px;
+}
+
+.H,
+.C,
+.D,
+.S {
+  background-size: 40px;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .H {
   background-image: url('../graphics/heart.png');
 }
+
 .C {
   background-image: url('../graphics/club.png');
 }
+
 .D {
   background-image: url('../graphics/diamond.png');
 }
+
 .S {
   background-image: url('../graphics/spade.png');
 }

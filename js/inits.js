@@ -56,7 +56,7 @@ function display() {
   var ulP2Hand = document.getElementById('p2Hand');
   var ulDiscards = document.getElementById('discards');
 
-  function addCardsToDOM(cards, elem, item) {
+  function addCardsToHand(cards, elem, item) {
     while (elem.firstChild) {
       elem.removeChild(elem.firstChild);
     }
@@ -69,10 +69,8 @@ function display() {
     }
   }
 
-  addCardsToDOM(p1Hand, ulP1Hand, 'li');
-  addCardsToDOM(p2Hand, ulP2Hand, 'li');
-  addCardsToDOM(discards, ulDiscards, 'li');
-  console.log(p2Hand);
+  addCardsToHand(p1Hand, ulP1Hand, 'li');
+  addCardsToHand(p2Hand, ulP2Hand, 'li');
 }
 
 
