@@ -1,0 +1,39 @@
+#deck {
+  float: left;
+  width: 120px;
+  vertical-align: top;
+}
+
+#discards {
+  display: inline-block;
+  vertical-align: top;
+}
+
+#p1Hand,
+#p2Hand {
+  display: block;
+  vertical-align: top;
+}
+
+#p1Hand li,
+#p2Hand li {
+  height: 50px;
+  width: 50px;
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+}
+
+.H {
+  background-image: url('../graphics/heart.png');
+}
+.C {
+  background-image: url('../graphics/club.png');
+}
+.D {
+  background-image: url('../graphics/diamond.png');
+}
+.S {
+  background-image: url('../graphics/spade.png');
+}
